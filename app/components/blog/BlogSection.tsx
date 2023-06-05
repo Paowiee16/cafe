@@ -2,7 +2,7 @@ import React from "react";
 
 function BlogSection() {
   return (
-    <div className="flex flex-wrap items-center justify-center content-center   w-5/6 m-auto lg:h-screen gap-5  text-center">
+    <div className="flex flex-wrap justify-center content-center w-5/6 m-auto lg:h-screen items-center text-center">
       <div>
         <h1 className="text-3xl font-extrabold sm:text-5xl text-primary ">
           The Coffee Blog
@@ -12,12 +12,12 @@ function BlogSection() {
           illo tenetur fuga ducimus numquam ea!
         </p>
       </div>
-      <div className="flex flex-wrap  justify-center items-center gap-4 lg:mt-20 ">
+      <div className="flex flex-wrap  justify-center items-center gap-4  ">
         <article className=" lg:w-3/12 md:w-2/6">
           <img
             alt="Lava"
             src="https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            className="h-56 lg:h-96 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            className="h-56 lg:h-80 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
           />
 
           <div className="p-4">
@@ -41,7 +41,7 @@ function BlogSection() {
           <img
             alt="Lava"
             src="https://images.unsplash.com/photo-1551462577-9aaf3ff5d927?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
-            className="h-56 lg:h-96 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            className="h-56 lg:h-80 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
           />
 
           <div className="p-4">
@@ -65,7 +65,7 @@ function BlogSection() {
           <img
             alt="Lava"
             src="https://images.unsplash.com/photo-1507915135761-41a0a222c709?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-            className="h-56 lg:h-96 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            className="h-56 lg:h-80 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
           />
 
           <div className="p-4">
