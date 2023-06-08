@@ -1,13 +1,14 @@
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 function Navbar() {
   return (
     <>
       <header className="p-4 fixed z-30 w-screen text-accentColor bg-primary">
-        <div className="container flex justify-between h-16 mx-auto">
+        <div className="container flex text-center items-center  justify-between h-16 mx-auto">
           <a
             rel="noopener noreferrer"
-            href="#"
+            href="/"
             aria-label="Back to homepage"
             className="flex items-center p-2"
           >
@@ -23,22 +24,20 @@ function Navbar() {
           </a>
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
-              <a
-                rel="noopener noreferrer"
-                href="#"
+              <Link
+                href="/about"
                 className="flex items-center px-4 hover-underline-animation  "
               >
-                Link
-              </a>
+                About
+              </Link>
             </li>
             <li className="flex">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="flex items-center px-4 hover-underline-animation "
+              <Link
+                href="/blog"
+                className="flex items-center px-4 hover-underline-animation  "
               >
-                Link
-              </a>
+                Blog
+              </Link>
             </li>
             <li className="flex">
               <a

@@ -23,9 +23,30 @@ function BlogSection() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
     },
+    {
+      title: " Finding the Journey to Mordor",
+      ImageUrl:
+        "https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+    },
+    {
+      title: " Finding the Journey to Mordor",
+      ImageUrl:
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhZmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+    },
+    {
+      title: " Finding the Journey to Mordor",
+      ImageUrl:
+        "https://images.unsplash.com/photo-1507915135761-41a0a222c709?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+    },
   ];
   return (
-    <div className="flex flex-wrap justify-center content-center w-5/6 m-auto lg:h-screen items-center text-center">
+    <div className="flex flex-wrap justify-center content-center w-5/6 m-auto lg:p-10 items-center text-center">
       <div>
         <h1 className="text-3xl font-extrabold sm:text-5xl text-primary ">
           The Coffee Blog
