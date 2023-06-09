@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import SectionHeader from "../components/Sections/SectionHeader";
+import ProductList from "./ProdctsList";
 
 const Products = () => {
   const [Details, setDetails] = useState({
@@ -11,6 +12,7 @@ const Products = () => {
   return (
     <>
       <SectionHeader Details={Details} />
+      <ProductList />
     </>
   );
 };
