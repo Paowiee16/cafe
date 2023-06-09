@@ -40,13 +40,12 @@ function Navbar() {
               </Link>
             </li>
             <li className="flex">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="flex items-center px-4  hover-underline-animation"
+              <Link
+                href="/products"
+                className="flex items-center px-4 hover-underline-animation  "
               >
-                Link
-              </a>
+                Products
+              </Link>
             </li>
             <li className="flex">
               <a
