@@ -16,7 +16,7 @@ const ProductList = () => {
           illo tenetur fuga ducimus numquam ea!
         </p>
       </div>
-      <div className="m-auto  lg:grid-cols-3 grid">
+      <div className="m-auto  grid-cols-3 grid">
         {data?.map((coffee: any) => (
           <div
             key={coffee.id}
