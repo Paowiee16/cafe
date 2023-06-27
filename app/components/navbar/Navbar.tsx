@@ -47,15 +47,6 @@ function Navbar() {
                 Products
               </Link>
             </li>
-            <li className="flex">
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="flex items-center px-4 hover-underline-animation "
-              >
-                Link
-              </a>
-            </li>
           </ul>
           <button className="flex justify-end p-4 md:hidden">
             <svg

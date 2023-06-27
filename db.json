@@ -1,0 +1,22 @@
+{
+  "coffee" : [
+      {
+          "id"    : 1,
+          "name"  : "cappucino",
+          "price" : 170,
+          "img"   : "https://images.unsplash.com/photo-1620052087057-bfd8235f5874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+      },
+      {
+        "id"    : 2,
+        "name"  : "latte",
+        "price" : 250,
+        "img"   : "https://www.acouplecooks.com/wp-content/uploads/2021/08/Iced-Latte-003.jpg"
+    },
+    {
+      "id"    : 3,
+      "name"  : "frappe",
+      "price" : 190,
+      "img"   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Kh8JApnEzA8_WZFNT683FeMzMW4q7Izd6J--QWHMq53GHcbjshwg8kKjD4ZCPI10dUo&usqp=CAU"
+  }
+  ]
+}

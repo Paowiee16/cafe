@@ -1,10 +1,8 @@
 import { useState } from "react";
 import useFetch from "../useFetch";
 const ProductList = () => {
-  const { data, isPending, error } = useFetch(
-    "https://api.sampleapis.com/coffee/hot"
-  );
-
+  const { data, isPending, error } = useFetch(" http://localhost:8000/coffee");
+  console.log(data);
   return (
     <div className="flex flex-wrap justify-center content-center w-5/6 m-auto lg:p-10 items-center text-center">
       <div className="m-auto">
@@ -22,8 +20,9 @@ const ProductList = () => {
             key={coffee.id}
             className="grid grid-cols-3 justify-center items-center flex-row gap-2 "
           >
-            <img src={coffee.image} className="w-12 h-12  rounded-full" />
-            <p>{coffee.title}</p>
+            <img src={coffee.img} className="w-12 h-12  rounded-full" />
+            <p>{coffee.name}</p>
+            <p> &#8369; {coffee.price}</p>
           </div>
         ))}
       </div>
