@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +16,8 @@
   }
 }
 
-* {
+
+html {
   font-family: 'Geologica', sans-serif;
 }
 .hero{
@@ -26,6 +27,7 @@
 .navbar {
   background-color: transparent;
 }
+
 
 .navbar.colorChange {
   background-color: #000;
@@ -62,4 +64,13 @@
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.pending{
+  font-size: xx-large;
+  min-width: 600px;
+  min-height: 900px;
+  margin: auto;
+  color: black;
+  margin-top: 5em;
+  text-align: center;
 }
