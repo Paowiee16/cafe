@@ -15,7 +15,16 @@ const ProductList = () => {
         </p>
       </div>
       <div className="flex flex-wrap w-11/12 text-left">
-        {isPending && <div className=" pending">Loading...</div>}
+        {isPending && (
+          <div className=" pending flex justify-center  content-center">
+            {" "}
+            Loading
+            <div
+              className="ml-4 w-10 h-10 rounded-full animate-spin
+                    border-8 border-solid border-primary border-t-accentColor"
+            ></div>{" "}
+          </div>
+        )}
         {data?.map((coffee: any) => (
           <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={coffee.id}>
             <a className="block relative  rounded overflow-hidden">
@@ -33,7 +42,7 @@ const ProductList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 {coffee.name}
               </h2>
-              <p className="mt-1">${coffee.price}</p>
+              <p className="mt-1">&#8369;{coffee.price}</p>
             </div>
           </div>
         ))}

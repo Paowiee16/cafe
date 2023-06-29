@@ -1,36 +1,8 @@
+"use client";
 import React from "react";
-
+import useFetch from "../../useFetch";
 function MenuSection() {
-  const Menu = [
-    {
-      title: "Coffee",
-      category: "Hot Drinks",
-      price: "$16.00",
-      imageUrl:
-        "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80",
-    },
-    {
-      title: "Chocolate Drink",
-      category: "Hot Drinks",
-      price: "$16.00",
-      imageUrl:
-        "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80",
-    },
-    {
-      title: "Chocolate Drink",
-      category: "Hot Drinks",
-      price: "$16.00",
-      imageUrl:
-        "https://images.unsplash.com/photo-1572286258217-40142c1c6a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-    },
-    {
-      title: "Chocolate Drink",
-      category: "Hot Drinks",
-      price: "$16.00",
-      imageUrl:
-        "https://images.unsplash.com/photo-1572286258217-40142c1c6a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-    },
-  ];
+  const { data, isPending, error } = useFetch(" http://localhost:8000/coffee");
   return (
     <section className="text-gray-600 body-font lg:h-screen">
       <div className="container px-5 py-24 mx-auto flex flex-wrap justify-center ">
@@ -44,23 +16,23 @@ function MenuSection() {
           </p>
         </div>
         <div className="flex flex-wrap w-11/12">
-          {Menu.map((menu) => (
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={menu.title}>
+          {data?.map((coffee: any) => (
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={coffee.id}>
               <a className="block relative  rounded overflow-hidden">
                 <img
                   alt="ecommerce"
                   className="object-cover object-center w-full h-48 block"
-                  src={menu.imageUrl}
+                  src={coffee.img}
                 />
               </a>
               <div className="mt-4 ">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  {menu.category}
+                  {coffee.category} Drinks
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  {menu.title}
+                  {coffee.name}
                 </h2>
-                <p className="mt-1">{menu.price}</p>
+                <p className="mt-1">&#8369;{coffee.price}</p>
               </div>
             </div>
           ))}
