@@ -14,10 +14,15 @@ const AboutDetails = () => {
           </p>
         </div>
         <div className="flex flex-wrap flex-col items-center w-11/12 justify-center text-center ">
-          <img
+          <Image
             alt="Art"
             src="https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
             className="h-64 w-full lg:w-3/6 object-cover object-center sm:h-80 lg:h-96 m-auto  "
+            width={48}
+            height={48}
+            loader={() =>
+              "https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+            }
           />
 
           <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl">

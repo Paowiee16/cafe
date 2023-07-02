@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import Image from "next/image";
 function BlogSection() {
   const blogDetails = [
     {
@@ -59,10 +60,13 @@ function BlogSection() {
       <div className="flex flex-wrap  justify-center items-center gap-4  ">
         {blogDetails.map((blogDetails) => (
           <article className=" lg:w-3/12 md:w-2/6" key={blogDetails.title}>
-            <img
+            <Image
               alt="Lava"
               src={blogDetails.ImageUrl}
+              loader={() => blogDetails.ImageUrl}
               className="h-56 lg:h-80 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+              width={48}
+              height={48}
             />
 
             <div className="p-4">

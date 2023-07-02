@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
@@ -12,7 +13,7 @@ function Navbar() {
             aria-label="Back to homepage"
             className="flex items-center p-2"
           >
-            <img src="/coffeIconV3.png" alt="icon" width={60} height={60} />
+            <Image src="/coffeIconV3.png" alt="icon" width={60} height={60} />
           </a>
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">

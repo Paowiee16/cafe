@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import useFetch from "../useFetch";
 import Image from "next/image";
@@ -18,12 +19,11 @@ const ProductList = () => {
       <div className="flex flex-wrap w-11/12 text-left">
         {isPending && (
           <div className=" pending flex justify-center  content-center">
-            {" "}
             Loading
             <div
               className="ml-4 w-10 h-10 rounded-full animate-spin
                     border-8 border-solid border-primary border-t-accentColor"
-            ></div>{" "}
+            ></div>
           </div>
         )}
         {data?.map((coffee: any) => (
