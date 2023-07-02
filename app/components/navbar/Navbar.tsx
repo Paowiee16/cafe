@@ -9,11 +9,16 @@ function Navbar() {
         <div className="container flex text-center items-center  justify-between h-16 mx-auto navtxt ">
           <a
             rel="noopener noreferrer"
-            href="/"
+            href="/index"
             aria-label="Back to homepage"
             className="flex items-center p-2"
           >
-            <Image src="/coffeIconV3.png" alt="icon" width={60} height={60} />
+            <Image
+              src="public/coffeIconV3.png"
+              alt="icon"
+              width={60}
+              height={60}
+            />
           </a>
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
