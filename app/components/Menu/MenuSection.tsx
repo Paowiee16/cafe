@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import useFetch from "../../useFetch";
+import Image from "next/image";
 function MenuSection() {
   const { data, isPending, error } = useFetch(" http://localhost:8000/coffee");
   return (
@@ -19,10 +20,13 @@ function MenuSection() {
           {data?.map((coffee: any) => (
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={coffee.id}>
               <a className="block relative  rounded overflow-hidden">
-                <img
+                <Image
                   alt="ecommerce"
                   className="object-cover object-center w-full h-48 block"
+                  loader={() => coffee.img}
                   src={coffee.img}
+                  width={48}
+                  height={48}
                 />
               </a>
               <div className="mt-4 ">
