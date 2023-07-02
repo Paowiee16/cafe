@@ -29,7 +29,7 @@ const AboutDetails = () => {
             Lorem, ipsum dolor.
           </h3>
           <p className="mt-4 max-w-xl  sm:text-xl/relaxed text-primary font-light p-10 text-left">
-            "On the other hand, we denounce with righteous indignation and
+            &#34;On the other hand, we denounce with righteous indignation and
             dislike men who are so beguiled and demoralized by the charms of
             pleasure of the moment, so blinded by desire, that they cannot
             foresee the pain and trouble that are bound to ensue; and equal
@@ -44,7 +44,7 @@ const AboutDetails = () => {
             annoyances accepted. The wise man therefore always holds in these
             matters to this principle of selection: he rejects pleasures to
             secure other greater pleasures, or else he endures pains to avoid
-            worse pains."
+            worse pains.&#34;
           </p>
         </div>
       </div>
