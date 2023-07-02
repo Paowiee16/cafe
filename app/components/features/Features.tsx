@@ -52,6 +52,7 @@ function Features() {
           alt="coffeeBag"
           className="  lg:col-start-2 lg:col-end-2 lg:row-span-5  "
           width={300}
+          height={300}
         />
         {features.map((feature) => (
           <div
