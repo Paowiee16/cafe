@@ -13,11 +13,11 @@ function Navbar() {
               className="flex items-center px-4 hover-underline-animation  "
             >
               <Image
-                src="public/coffeIconV3.png"
+                src="/coffeIconV3.png"
                 alt="icon"
                 width={60}
                 height={60}
-                loader={() => "public/coffeIconV3.png"}
+                loader={() => "/coffeIconV3.png"}
               />
             </Link>
           </li>
