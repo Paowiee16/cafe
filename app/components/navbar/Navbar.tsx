@@ -7,19 +7,20 @@ function Navbar() {
     <>
       <header className="p-4 fixed z-30 w-screen text-accentColor bg-primary">
         <div className="container flex text-center items-center  justify-between h-16 mx-auto navtxt ">
-          <a
-            rel="noopener noreferrer"
-            href="/index"
-            aria-label="Back to homepage"
-            className="flex items-center p-2"
-          >
-            <Image
-              src="public/coffeIconV3.png"
-              alt="icon"
-              width={60}
-              height={60}
-            />
-          </a>
+          <li className="flex">
+            <Link
+              href="/about"
+              className="flex items-center px-4 hover-underline-animation  "
+            >
+              <Image
+                src="public/coffeIconV3.png"
+                alt="icon"
+                width={60}
+                height={60}
+                loader={() => "public/coffeIconV3.png"}
+              />
+            </Link>
+          </li>
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
               <Link
