@@ -12,13 +12,7 @@ function Navbar() {
               href="/about"
               className="flex items-center px-4 hover-underline-animation  "
             >
-              <Image
-                src="/coffeIconV3.png"
-                alt="icon"
-                width={60}
-                height={60}
-                loader={() => "/coffeIconV3.png"}
-              />
+              <Image src="/coffeIconV3.png" alt="icon" width={60} height={60} />
             </Link>
           </li>
           <ul className="items-stretch hidden space-x-3 md:flex">
