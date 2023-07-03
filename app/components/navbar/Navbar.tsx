@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import coffeIcon from "../../../public/coffeIconV3.png";
 import React, { useEffect } from "react";
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
               href="/about"
               className="flex items-center px-4 hover-underline-animation  "
             >
-              <Image src="/coffeIconV3.png" alt="icon" width={60} height={60} />
+              <Image src={coffeIcon} alt="icon" width={60} height={60} />
             </Link>
           </li>
           <ul className="items-stretch hidden space-x-3 md:flex">
