@@ -10,7 +10,7 @@ function Navbar() {
         <div className="container flex text-center items-center  justify-between h-16 mx-auto navtxt ">
           <li className="flex">
             <Link
-              href="/about"
+              href="/"
               className="flex items-center px-4 hover-underline-animation  "
             >
               <Image src={coffeIcon} alt="icon" width={60} height={60} />
