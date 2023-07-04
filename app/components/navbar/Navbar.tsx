@@ -9,7 +9,7 @@ function Navbar() {
       <header className="p-4 fixed z-30 w-screen text-accentColor bg-primary">
         <div className="container flex text-center items-center  justify-between h-16 mx-auto navtxt ">
           <li className="flex">
-            <Link href="/" className="flex items-center px-4   ">
+            <Link href="/" className="flex items-center px-4  ">
               <Image src={coffeIcon} alt="icon" width={60} height={60} />
             </Link>
           </li>
