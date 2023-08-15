@@ -15,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        <title>Coffee Cups</title>
+        <link rel="icon" href="/coffeIconV3.png" />
+      </head>
       <body>
         <Navbar />
         {children}
