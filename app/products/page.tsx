@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import SectionHeader from "../components/Sections/SectionHeader";
-import ProductList from "./ProdctsList";
-
+import Storeproducts from "./Storeproducts";
+import MenuSection from "../components/Menu/MenuSection";
 const Products = () => {
   const [Details, setDetails] = useState({
     title: "Menu",
@@ -12,7 +12,7 @@ const Products = () => {
   return (
     <>
       <SectionHeader Details={Details} />
-      <ProductList />
+      <MenuSection />
     </>
   );
 };
