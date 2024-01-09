@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import CoffeBag from "../../../public/CoffeBag.png";
+import CoffeBag from "../../../public/CoffeBagV2.png";
 import { CiCoffeeBean, CiCoffeeCup } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
+import { TbCoffee } from "react-icons/tb";
+import { SiBuymeacoffee } from "react-icons/si";
+import {
+  MdOutlineCoffeeMaker,
+  MdOutlineLocalFireDepartment,
+} from "react-icons/md";
+
 function Features() {
   const features = [
     {
@@ -18,26 +25,26 @@ function Features() {
         " Similique quas ea veniamTempore quasi porro Blanditiis aut mollitia ex",
     },
     {
-      ImageSrc: AiOutlineFire,
+      ImageSrc: MdOutlineLocalFireDepartment,
       title: "Roast",
       description:
         " Similique quas ea veniamTempore quasi porro Blanditiis aut mollitia ex",
     },
     {
-      ImageSrc: AiOutlineFire,
+      ImageSrc: MdOutlineCoffeeMaker,
       title: "Aroma",
       description:
         " Similique quas ea veniamTempore quasi porro Blanditiis aut mollitia ex",
     },
     {
-      ImageSrc: AiOutlineFire,
-      title: "Aroma",
+      ImageSrc: SiBuymeacoffee,
+      title: "Cold Coffee",
       description:
         " Similique quas ea veniamTempore quasi porro Blanditiis aut mollitia ex",
     },
     {
-      ImageSrc: AiOutlineFire,
-      title: "Aroma",
+      ImageSrc: TbCoffee,
+      title: "Hot Coffee",
       description:
         " Similique quas ea veniamTempore quasi porro Blanditiis aut mollitia ex",
     },
@@ -51,8 +58,8 @@ function Features() {
           src={CoffeBag}
           alt="coffeeBag"
           className="  lg:col-start-2 lg:col-end-2 lg:row-span-5  "
-          width={300}
-          height={300}
+          width={350}
+          height={350}
         />
         {features.map((feature) => (
           <div
@@ -67,7 +74,6 @@ function Features() {
             </div>
           </div>
         ))}
-        ;
       </div>
     </section>
   );
